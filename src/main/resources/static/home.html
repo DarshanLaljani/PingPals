@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Categories</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: black;
+            text-align: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url("HomePage.png");
+        }
+
+        .category-title {
+            font-size: 46px;
+            margin-bottom: 10px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .box-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+
+        .category-box {
+            width: 250px;
+            height: 250px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+
+        }
+
+        .category-box a {
+            text-decoration: none; /* Remove underlines from links */
+        }
+
+        .family-box {
+            background-color: blue;
+            color: white;
+            box-shadow: 0 0 10px #0000FF, 0 0 10px #0000FF, 0 0 10px #0000FF;
+        }
+
+        .close-friends-box {
+            background-color: #ff00f7;
+            color: white;
+            box-shadow: 0 0 10px #FF1493, 0 0 10px #FF1493, 0 0 10px #FF1493;
+        }
+
+        .friends-box {
+            background-color: green;
+            color: white;
+            box-shadow: 0 0 10px #008000, 0 0 10px #008000, 0 0 10px #008000;
+        }
+
+        .professional-friends-box {
+            background-color: orange;
+            color: white;
+            box-shadow: 0 0 10px #FFA500, 0 0 10px #FFA500, 0 0 10px #FFA500;
+        }
+
+        .category-box:hover {
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+<h1 class="category-title">Categories</h1>
+<div class="box-container">
+    <a href="chat1.html">
+        <div class="category-box family-box">
+            <i class="fas fa-home fa-3x"></i> <!-- Font Awesome icon for family, increased size -->
+            Family
+        </div>
+    </a>
+    <a href="chat1.html">
+        <div class="category-box close-friends-box">
+            <i class="fas fa-user-friends fa-3x"></i> <!-- Font Awesome icon for close friends, increased size -->
+            Close Friends
+        </div>
+    </a>
+    <a href="chat1.html">
+        <div class="category-box friends-box">
+            <i class="fas fa-users fa-3x"></i> <!-- Font Awesome icon for friends, increased size -->
+            Friends
+        </div>
+    </a>
+    <a href="chat1.html">
+        <div class="category-box professional-friends-box">
+            <i class="fas fa-briefcase fa-3x"></i> <!-- Font Awesome icon for professional friends, increased size -->
+            Professional
+        </div>
+    </a>
+</div>
+</body>
+</html>
